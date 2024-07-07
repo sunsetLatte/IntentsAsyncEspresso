@@ -29,7 +29,8 @@ public class IntentSecondWayTest {
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
-    @Test
+
+        @Test
     public void testGoToSettings() {
         ViewInteraction overflowMenuButton = onView(withContentDescription("Ещё"));
         overflowMenuButton.check(matches(isDisplayed()));
